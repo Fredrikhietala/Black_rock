@@ -1,0 +1,196 @@
+/*
+Theme Name: Black Rock
+Theme URI: https://github.com/Fredrikhietala/Black_rock
+Description: My first Wordpress-theme based on a basic bootstrap-page. I've built it with help and inpiration from tutorials and youtube-videos.
+Author: Fredrik Hietala
+Author URI: http://www.fredrikhietala.se;
+Version: 1.0
+Tags: responsive, dark, bootstrap, panels
+
+*/
+
+/* **** Color Guide *****
+Black: #222831 RGB (34,40,49)
+Grey: #393E46 RGB (57,62,70)
+Blue: #00ADB5 RGB (0,173,181)
+White: #EEEEEE RGB (238,238,238)
+************ */
+
+@import url('css/bootstrap.min.css'); 
+
+h1 {
+
+}
+
+/* Global Styles */
+
+html {
+    position: relative;
+    min-height: 100%;
+}	
+body {
+	margin-bottom: 60px;
+    background: url(images/background.jpg) no-repeat center center fixed;
+    background-color: rgb(34,40,49);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #EEEEEE;
+    font-size: 18px;
+}
+body > .container {
+	padding-top: 60px;
+}
+.panel-transparent {
+    background: none;
+    border: 1px solid #393E46;
+}
+.panel-transparent .panel-body {
+    background: rgba(34, 40 ,49 ,0.7) !important;
+    color: #EEEEEE;
+    border: 1px solid #393E46;
+    padding-top: 5px;
+}
+.panel-footer {
+    background: #393E46;
+    color: #EEEEEE;
+    border: 1px solid #222831;
+}
+.panel a {
+    color: #EEEEEE;
+}
+.panel-body > a:hover
+.panel-body > a:focus {
+    text-decoration: none !important;
+    color: #222831;
+}
+.panel-footer ul.post-meta {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    color: #EEEEEE
+}
+ul.post-meta {
+  padding-left: 0;
+}
+/*navbar styles*/
+.navbar-custom {
+    background-color: #222831;
+    color: #EEEEEE;
+    border-radius: 0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #EEEEEE;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #EEEEEE;
+    background-color: #222831;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #393E46;
+}
+
+.navbar-custom .navbar-brand {
+    color: #EEEEEE;
+}
+.navbar-custom .navbar-toggle {
+    background-color: #EEEEEE;
+}
+.navbar-custom .icon-bar {
+    background-color: #00ADB5;
+}
+.navbar-custom .navbar-toggle > li > a:hover,
+.navbar-custom .navbar-toggle > li > a:focus,
+.navbar-custom .navbar-toggle > .active > a:hover,
+.navbar-custom .navbar-toggle > .active > a:focus,
+.navbar-custom .navbar-toggle > .open >a {
+    text-decoration: none;
+    background-color: #393E46;
+}
+/*link styles*/
+a {
+    color: #EEEEEE;
+}
+li a:hover
+li a:focus {
+    text-decoration: none;
+    color: #00ADB5;
+}
+li > a:hover 
+li > a:focus {
+    color: #00ADB5;
+}
+/*comment styles*/
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+input#author, input#email, input#url, textarea#comment {
+    color: black;
+}
+input.commentsubmit {
+    color: #222831;
+}
+/*footer styles */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+}
+.container .footer {
+    width: auto;
+    max-width: 640px;
+    padding: 0 15px;
+}
+.container > .text-muted {
+    margin: 20px 0;
+    color: #EEEEEE;
+}
+/*sidebar styles*/
+ul li {
+    list-style: none;
+}
+.panel-body ul {
+    padding-left: 0;
+}
+ul#menu-social-menu.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+}
+@media screen and (max-width: 990px) {
+  ul#menu-social-menu.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+input#s {
+    color: black;
+}
+input#searchsubmit {
+    color: #222831;
+}
+@media screen and (min-width: 890px) {
+    input#s {
+        max-width: 168.89px;
+  }
+}
+
+
